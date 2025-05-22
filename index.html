@@ -67,7 +67,9 @@
 <body>
   <div class="container">
     <h1>Store Request Form</h1>
-    <form action="https://formspree.io/f/mqaqjrry" method="POST">
+    <form name="store-request" method="POST" data-netlify="true" action="thankyou.html">
+      <input type="hidden" name="form-name" value="store-request" />
+
       <label for="name">Full Name</label>
       <input type="text" name="name" id="name" required />
 
@@ -93,8 +95,6 @@
 
       <label for="comments">Additional Comments</label>
       <textarea name="comments" id="comments" rows="4" placeholder="Write any other info here..."></textarea>
-
-      <input type="hidden" name="_redirect" value="https://ericnkunzi.github.io/store-request-form/thankyou.html" />
 
       <button type="submit">Submit Request</button>
     </form>
